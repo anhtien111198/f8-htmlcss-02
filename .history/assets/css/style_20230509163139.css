@@ -496,16 +496,11 @@ a {
     display: flex;
     gap: 30px;
     margin-top: 55px;
-    overflow: hidden;
 }
 .blog .item {
-    flex-shrink: 0;
-    width: calc(33.333% - 20px);
+    width: 33.333%;
     background: #ffffff;
     border-radius: 16px;
-}
-.blog .item:hover {
-    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
 }
 .blog .item .thum {
     width: 100%;
@@ -518,9 +513,8 @@ a {
 }
 .blog .item .date {
     position: relative;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    padding-bottom: 12px;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
@@ -539,108 +533,10 @@ a {
     position: absolute;
     content: "";
     display: inline-block;
-    right: -27px;
+    width: 160px;
     height: 1px;
-    left: 0;
     bottom: 0;
+    /* margin: 12px 0; */
     background: #e2dfda;
     border-radius: 0.5px;
-}
-.blog .item .title a {
-    display: inline-block;
-    margin: 12px 0;
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 1.75;
-    color: #171100;
-}
-.blog .item .btn {
-    font-size: 1.4rem;
-}
-.blog .item .btn:hover {
-    background: var(--primary);
-}
-.blog .dots {
-    margin-top: 38px;
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-}
-.blog .dots .dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #5f5b53;
-    cursor: pointer;
-}
-
-.blog .dot.active {
-    background: var(--primary);
-    cursor: default;
-}
-/* =======footer========== */
-.footer {
-    padding: 96px 135px 0;
-    background: #2e2100;
-}
-.footer .row {
-    display: flex;
-    padding-bottom: 38px;
-    border-bottom: 1px solid #59554b;
-}
-.footer .row .column {
-    width: 21.6667%;
-}
-.footer .row .column:first-child {
-    width: 35%;
-}
-.footer .desc {
-    margin-top: 18px;
-    max-width: 267px;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.86;
-    color: #bfbcb2;
-}
-.footer .socials {
-    display: flex;
-    margin-top: 18px;
-    gap: 18px;
-}
-.footer .title {
-    display: inline-block;
-    padding: 0 48px 14px 0;
-    border-bottom: 1px solid #59554b;
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 1.75;
-    color: #ffffff;
-}
-.footer .list {
-    margin-top: 28px;
-}
-.footer .list a {
-    display: inline-block;
-    margin-top: 12px;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.86;
-    color: #bfbcb2;
-}
-.footer .list li:last-child a {
-    margin-bottom: 0;
-}
-.footer .list strong {
-    font-weight: 600;
-    color: #fff;
-}
-.footer .copyright {
-    padding: 28px 0;
-}
-.footer .copyright p {
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.86;
-    text-align: center;
-    color: #807d74;
 }
